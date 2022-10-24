@@ -11,16 +11,16 @@ encryptBtn.addEventListener('click', function (e) {
 function encrypt(str) {
   const alph = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const shift = Number(shiftSel.value);
-  const rotStr = [];
+  const encStr = [];
 
   for (const char of str) {
     if (alph.includes(char) === false) {
-      rotStr.push(char);
-    } else rotStr.push(alph[(shift + alph.indexOf(char)) % alph.length]);
+      encStr.push(char);
+    } else encStr.push(alph[(shift + alph.indexOf(char)) % alph.length]);
   }
 
-  str = rotStr.join('');
+  enc = encStr.join('');
 
-  encryptedTxt.textContent = str;
+  encryptedTxt.textContent = enc;
   inputTxt.value = '';
 }
