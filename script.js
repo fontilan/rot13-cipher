@@ -5,10 +5,10 @@ const encryptedTxt = document.getElementById('encrypted-txt');
 
 encryptBtn.addEventListener('click', function (e) {
   e.preventDefault();
-  rot13(inputTxt.value.toUpperCase());
+  encrypt(inputTxt.value.toUpperCase());
 });
 
-function rot13(str) {
+function encrypt(str) {
   const alph = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const shift = Number(shiftSel.value);
   const rotStr = [];
