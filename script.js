@@ -14,9 +14,9 @@ function encrypt(str) {
   const encStr = [];
 
   for (const char of str) {
-    if (alph.includes(char) === false) {
-      encStr.push(char);
-    } else encStr.push(alph[(shift + alph.indexOf(char)) % alph.length]);
+    alph.includes(char)
+      ? encStr.push(alph[(shift + alph.indexOf(char)) % alph.length])
+      : encStr.push(char);
   }
 
   enc = encStr.join('');
