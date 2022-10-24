@@ -25,7 +25,13 @@ input {
 }
 
 #encrypt-btn {
+  background: rgb(52, 76, 153);
+  border-radius: 3px;
+  border: none;
+  color: rgb(240, 240, 240);
+  cursor: pointer;
   margin-top: 1em;
+  padding: 0.5em;
 }
 
 #encrypted-txt {
