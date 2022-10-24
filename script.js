@@ -19,7 +19,7 @@ function encrypt(str) {
       : encStr.push(char);
   }
 
-  enc = encStr.join('');
+  const enc = encStr.join('');
 
   encryptedTxt.textContent = enc;
   inputTxt.value = '';
