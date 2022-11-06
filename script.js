@@ -22,5 +22,6 @@ function encrypt(str) {
   const enc = encStr.join('');
 
   encryptedTxt.textContent = enc;
-  inputTxt.value = '';
+  // if you want to clear the textarea after converting the text
+  // inputTxt.value = '';
 }
