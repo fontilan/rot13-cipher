@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ceasar's Cipher</title>
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-zinc-200 font-mono text-zinc-800">
+    <main class="rounded-md bg-zinc-100 py-6 px-3 shadow-md">
+      <h1 class="text-4xl font-bold tracking-tight text-violet-900">
+        Ceasar's Cipher
+      </h1>
+      <section class="mt-4">
+        <h2 class="text-l font-medium">1. Choose the shift:</h2>
+        <input type="number" min="1" max="25" value="13" id="shift-sel" />
+      </section>
+      <section class="mt-4">
+        <h2 class="text-l font-medium">2. Enter text to encrypt:</h2>
+        <form>
+          <textarea name="input-txt" id="input-txt" cols="30" rows="4">
+          </textarea>
+          <br />
+          <button
+            class="mt-2 rounded-md bg-violet-100 p-2 transition hover:bg-violet-200 hover:shadow-inner"
+            type="submit"
+            id="encrypt-btn">
+            ENCRYPT
+          </button>
+        </form>
+      </section>
+      <section class="mt-4">
+        <h2 class="text-l font-medium">3. Your encrypted text:</h2>
+        <p id="encrypted-txt"></p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
