@@ -8,18 +8,18 @@
     <title>Caesar's Cipher</title>
   </head>
   <body
-    class="grid min-h-screen grid-cols-12 items-center justify-center bg-violet-50 font-sans text-zinc-800">
+    class="grid min-h-screen grid-cols-12 items-center justify-center bg-stone-900 font-sans text-stone-200">
     <main
-      class="relative col-span-12 col-start-1 grid grid-cols-2 gap-6 rounded-md border border-violet-200 bg-gray-50 py-8 px-4 transition sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-4">
+      class="relative col-span-12 col-start-1 grid grid-cols-2 gap-6 rounded-md bg-stone-800 py-8 px-4 shadow-lg transition sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-4">
       <h1
-        class="col-span-2 py-3 text-center text-5xl font-bold tracking-tight text-violet-900">
+        class="col-span-2 py-3 text-center text-5xl font-bold tracking-tight text-violet-200">
         Caesar's Cipher
       </h1>
       <section>
         <div>
           <h2 class="text-l font-medium">1. Choose the shift:</h2>
           <input
-            class="mt-1 w-full rounded-md border border-violet-100 p-2 focus-visible:outline-none focus-visible:outline-violet-400"
+            class="mt-1 w-full rounded-sm p-2 text-stone-800 focus-visible:outline-none focus-visible:outline-violet-300"
             type="number"
             min="1"
             max="25"
@@ -30,13 +30,13 @@
           <h2 class="text-l font-medium">2. Enter text to encrypt:</h2>
           <form>
             <textarea
-              class="mt-1 w-full rounded-md border border-violet-100 p-2 focus-visible:outline-none focus-visible:outline-violet-400"
+              class="mt-1 w-full rounded-sm p-2 text-stone-800 focus-visible:outline-none focus-visible:outline-violet-300"
               name="input-txt"
               id="input-txt">
             </textarea>
             <br />
             <button
-              class="float-right mt-4 rounded-md bg-violet-200 p-2 transition hover:bg-violet-300 hover:shadow-inner"
+              class="float-right mt-4 rounded-sm bg-violet-500 p-2 font-bold text-stone-50 transition hover:bg-violet-600 hover:shadow-inner"
               type="submit"
               id="encrypt-btn">
               ENCRYPT
@@ -51,7 +51,7 @@
         </div>
       </section>
       <aside
-        class="absolute bottom-2 right-2 text-sm text-zinc-500 hover:text-zinc-600">
+        class="absolute bottom-2 right-2 text-sm text-stone-400 hover:text-stone-300">
         <a
           href="https://en.wikipedia.org/wiki/Caesar_cipher"
           target="_blank"
