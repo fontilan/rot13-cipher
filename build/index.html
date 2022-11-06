@@ -5,36 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Ceasar's Cipher</title>
+    <title>Caesar's Cipher</title>
   </head>
   <body
-    class="flex min-h-screen items-center justify-center bg-zinc-200 font-mono text-zinc-800">
-    <main class="rounded-md bg-zinc-100 py-6 px-3 shadow-md">
-      <h1 class="text-4xl font-bold tracking-tight text-violet-900">
-        Ceasar's Cipher
+    class="grid min-h-screen grid-cols-12 items-center justify-center bg-violet-50 font-sans text-zinc-800">
+    <main
+      class="relative col-span-12 col-start-1 grid grid-cols-2 gap-6 rounded-md border border-violet-200 bg-gray-50 py-8 px-4 transition sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-4">
+      <h1
+        class="col-span-2 py-3 text-center text-5xl font-bold tracking-tight text-violet-900">
+        Caesar's Cipher
       </h1>
-      <section class="mt-4">
-        <h2 class="text-l font-medium">1. Choose the shift:</h2>
-        <input type="number" min="1" max="25" value="13" id="shift-sel" />
+      <section>
+        <div>
+          <h2 class="text-l font-medium">1. Choose the shift:</h2>
+          <input
+            class="mt-1 w-full rounded-md border border-violet-100 p-2 focus-visible:outline-none focus-visible:outline-violet-400"
+            type="number"
+            min="1"
+            max="25"
+            value="13"
+            id="shift-sel" />
+        </div>
+        <div class="mt-6">
+          <h2 class="text-l font-medium">2. Enter text to encrypt:</h2>
+          <form>
+            <textarea
+              class="mt-1 w-full rounded-md border border-violet-100 p-2 focus-visible:outline-none focus-visible:outline-violet-400"
+              name="input-txt"
+              id="input-txt">
+            </textarea>
+            <br />
+            <button
+              class="float-right mt-4 rounded-md bg-violet-200 p-2 transition hover:bg-violet-300 hover:shadow-inner"
+              type="submit"
+              id="encrypt-btn">
+              ENCRYPT
+            </button>
+          </form>
+        </div>
       </section>
-      <section class="mt-4">
-        <h2 class="text-l font-medium">2. Enter text to encrypt:</h2>
-        <form>
-          <textarea name="input-txt" id="input-txt" cols="30" rows="4">
-          </textarea>
-          <br />
-          <button
-            class="mt-2 rounded-md bg-violet-100 p-2 transition hover:bg-violet-200 hover:shadow-inner"
-            type="submit"
-            id="encrypt-btn">
-            ENCRYPT
-          </button>
-        </form>
-      </section>
-      <section class="mt-4">
+      <section>
         <h2 class="text-l font-medium">3. Your encrypted text:</h2>
-        <p id="encrypted-txt"></p>
+        <div class="grid h-full items-center break-all">
+          <p class="font-bold" id="encrypted-txt"></p>
+        </div>
       </section>
+      <aside
+        class="absolute bottom-2 right-2 text-sm text-zinc-500 hover:text-zinc-600">
+        <a
+          href="https://en.wikipedia.org/wiki/Caesar_cipher"
+          target="_blank"
+          rel="noreferrer"
+          >What is a Caesar's cipher?</a
+        >
+      </aside>
     </main>
     <script src="script.js"></script>
   </body>
