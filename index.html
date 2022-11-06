@@ -8,14 +8,14 @@
     <title>Caesar's Cipher</title>
   </head>
   <body
-    class="grid min-h-screen grid-cols-12 items-center justify-center bg-stone-900 font-sans text-stone-200">
+    class="grid min-h-screen grid-cols-12 sm:items-center justify-center bg-stone-900 font-sans text-stone-200">
     <main
-      class="relative col-span-12 col-start-1 grid grid-cols-2 gap-6 rounded-md bg-stone-800 py-8 px-4 shadow-lg transition sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-4">
+      class="relative col-span-12 col-start-1 sm:grid sm:grid-cols-2 sm:gap-6 rounded-md bg-stone-800 py-8 px-4 shadow-lg transition sm:col-span-10 sm:col-start-2 lg:col-span-6 lg:col-start-4">
       <h1
-        class="col-span-2 py-3 text-center text-5xl font-bold tracking-tight text-violet-200">
+        class="col-span-2 py-4 text-center text-5xl font-bold tracking-tight text-violet-200">
         Caesar's Cipher
       </h1>
-      <section>
+      <section class="mt-4">
         <div>
           <h2 class="text-l font-medium">1. Choose the shift:</h2>
           <input
@@ -35,16 +35,18 @@
               id="input-txt">
             </textarea>
             <br />
-            <button
-              class="float-right mt-4 rounded-sm bg-violet-500 p-2 font-bold text-stone-50 transition hover:bg-violet-600 hover:shadow-inner"
-              type="submit"
-              id="encrypt-btn">
-              ENCRYPT
-            </button>
+            <div class="flex justify-end">
+              <button
+                class="mt-4 rounded-sm bg-violet-500 p-2 font-bold text-stone-50 transition hover:bg-violet-600 hover:shadow-inner"
+                type="submit"
+                id="encrypt-btn">
+                ENCRYPT
+              </button>
+            </div>
           </form>
         </div>
       </section>
-      <section>
+      <section class="mt-4">
         <h2 class="text-l font-medium">3. Your encrypted text:</h2>
         <div class="grid h-full items-center break-all">
           <p class="font-bold" id="encrypted-txt"></p>
